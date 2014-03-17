@@ -1,0 +1,27 @@
+apply plugin: "ratpack-groovy"
+
+buildscript {
+  repositories {
+    maven { url "http://oss.jfrog.org/repo" }
+    jcenter()
+  }
+  dependencies {
+    classpath "io.ratpack:ratpack-gradle:0.9.0"
+  }
+}
+
+repositories {
+  maven { url "http://oss.jfrog.org/repo" }
+  jcenter()
+  maven { url "http://repo.springsource.org/repo" }
+}
+
+dependencies {
+  testCompile "org.spockframework:spock-core:0.7-groovy-2.0"
+  springloaded "org.springsource.springloaded:springloaded-core:1.1.1"
+  compile "io.ratpack:ratpack-jackson:0.9.0"
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = "1.10"
+}

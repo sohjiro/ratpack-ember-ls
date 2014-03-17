@@ -1,0 +1,19 @@
+{
+  "name": "ratpack-ember-ls",
+  "version": "0.0.1",
+  "authors": [
+    "sohjiro <felipe@makingdevs.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/ratpack/public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember-localstorage-adapter": "~0.2.0"
+  }
+}

@@ -1,0 +1,7 @@
+.DS_Store
+*.swp
+build
+src/ratpack/public/lib
+.gradle
+.gradletasknamecache
+
